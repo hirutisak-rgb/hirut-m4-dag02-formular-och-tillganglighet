@@ -39,8 +39,24 @@
       <input type="date" id="datum"  name="datum" autocomplete="date" required>
     </div>
 
-
       <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
+       <div class="falt">
+          <label for="antal">Antal personer *</label>
+          <select id="antal" namn="antal" required>
+            <option value="">Välj antal</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 eller fler</option>
+          </select>
+       </div>
+
+       <div class="falt">
+        <label for="onskemal">Övriga Önskemål</label>
+        <textarea id="onskemal" name="onskemal" raws="4"></textarea>
+       </div>
+       
       <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
       <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
     </form>
